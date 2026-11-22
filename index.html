@@ -1,0 +1,1281 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>尤果网免费观看 - 官方视频内容平台, 高清正版在线观看</title>
+<meta name="description" content="尤果网免费观看官方网站，专注高清正版视频内容生态，汇集原创影像、创作者社区与精品内容，为用户提供值得信赖的在线观看平台与持续运营的内容服务。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff6b4a'/%3E%3Cstop offset='1' stop-color='%23c2185b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Cpath d='M24 18 L48 32 L24 46 Z' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+:root{
+  --yg-ink:#1c1520;
+  --yg-ink-soft:#4a3f52;
+  --yg-amber:#ff6b4a;
+  --yg-amber-deep:#e04a2b;
+  --yg-plum:#8a2f5e;
+  --yg-cream:#fdf6f1;
+  --yg-sand:#f6e9df;
+  --yg-line:#efdfd4;
+  --yg-white:#ffffff;
+  --yg-gold:#e9a03b;
+  --yg-shadow:0 10px 34px rgba(138,47,94,.14);
+  --yg-radius:18px;
+  --yg-head-h:118px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:var(--yg-head-h);}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  color:var(--yg-ink);
+  background:var(--yg-cream);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;}
+h1,h2,h3,h4{margin:0;line-height:1.3;}
+p{margin:0 0 14px;}
+ul,ol{margin:0;padding:0;list-style:none;}
+
+/* ===== sticky head ===== */
+.yg-sticky{
+  position:sticky;top:0;z-index:120;
+  background:var(--yg-white);
+  box-shadow:0 2px 18px rgba(28,21,32,.06);
+}
+.yg-announce{
+  background:linear-gradient(90deg,var(--yg-plum),var(--yg-amber-deep));
+  color:#fff;font-size:13.5px;
+  padding:8px 18px;display:flex;gap:12px;align-items:center;justify-content:center;
+  text-align:center;flex-wrap:wrap;
+}
+.yg-announce b{background:rgba(255,255,255,.22);padding:1px 9px;border-radius:999px;font-weight:600;font-size:12px;letter-spacing:.5px;}
+.yg-announce em{font-style:normal;opacity:.92;}
+.yg-header{
+  display:flex;align-items:center;gap:26px;
+  padding:14px clamp(16px,4vw,54px);
+  max-width:1320px;margin:0 auto;
+}
+.yg-brand{display:flex;align-items:center;gap:11px;flex:0 0 auto;}
+.yg-brand-mark{
+  width:44px;height:44px;border-radius:13px;
+  background:conic-gradient(from 210deg,var(--yg-amber),var(--yg-gold),var(--yg-plum),var(--yg-amber));
+  display:grid;place-items:center;box-shadow:var(--yg-shadow);
+}
+.yg-brand-mark svg{width:20px;height:20px;}
+.yg-brand-txt strong{display:block;font-size:18px;letter-spacing:.6px;}
+.yg-brand-txt span{font-size:11px;letter-spacing:2.6px;color:var(--yg-ink-soft);text-transform:uppercase;}
+.yg-nav{display:flex;gap:4px;flex:1 1 auto;flex-wrap:wrap;}
+.yg-nav a{
+  font-size:14.5px;padding:7px 13px;border-radius:10px;color:var(--yg-ink-soft);
+  transition:.22s;white-space:nowrap;
+}
+.yg-nav a:hover,.yg-nav a.yg-on{background:var(--yg-sand);color:var(--yg-plum);font-weight:600;}
+.yg-tools{display:flex;align-items:center;gap:10px;flex:0 0 auto;}
+.yg-search{
+  display:flex;align-items:center;gap:6px;background:var(--yg-sand);
+  border-radius:999px;padding:6px 8px 6px 14px;border:1px solid transparent;transition:.25s;
+}
+.yg-search:focus-within{border-color:var(--yg-amber);background:#fff;}
+.yg-search input{border:0;background:transparent;outline:none;font-size:14px;width:132px;color:var(--yg-ink);}
+.yg-search button{
+  border:0;border-radius:999px;padding:6px 15px;font-size:13px;color:#fff;
+  background:linear-gradient(135deg,var(--yg-amber),var(--yg-amber-deep));
+}
+.yg-burger{
+  display:none;border:1px solid var(--yg-line);background:#fff;border-radius:11px;
+  width:42px;height:42px;place-items:center;
+}
+.yg-burger span{display:block;width:19px;height:2px;background:var(--yg-ink);margin:3px auto;border-radius:2px;transition:.25s;}
+.yg-search-feedback{
+  max-width:1320px;margin:0 auto;padding:0 clamp(16px,4vw,54px);
+}
+.yg-search-feedback p{
+  font-size:13px;color:var(--yg-plum);background:var(--yg-sand);
+  padding:8px 16px;border-radius:12px;margin:0 0 12px;display:none;
+}
+.yg-search-feedback p.yg-show{display:block;}
+
+/* ===== hero ===== */
+.yg-hero{
+  max-width:1320px;margin:0 auto;padding:clamp(26px,4vw,52px) clamp(16px,4vw,54px) 10px;
+}
+.yg-hero-grid{
+  display:grid;grid-template-columns:5fr 5fr;gap:clamp(20px,3.4vw,50px);align-items:center;
+}
+.yg-hero-tag{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:1.6px;
+  color:var(--yg-amber-deep);background:#fff;border:1px solid var(--yg-line);
+  padding:5px 14px;border-radius:999px;margin-bottom:18px;font-weight:600;
+}
+.yg-hero-tag i{width:7px;height:7px;border-radius:50%;background:var(--yg-amber);display:block;animation:ygPulse 2s infinite;}
+@keyframes ygPulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.45;transform:scale(.8);}}
+.yg-hero h1{
+  font-size:clamp(34px,5.2vw,58px);letter-spacing:1px;font-weight:800;
+  color:var(--yg-ink);margin-bottom:14px;
+}
+.yg-hero h1 span{
+  background:linear-gradient(120deg,var(--yg-amber),var(--yg-plum));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.yg-hero-lead{font-size:16.5px;color:var(--yg-ink-soft);max-width:34em;margin-bottom:14px;}
+.yg-hero-intro{font-size:14.5px;color:var(--yg-ink-soft);max-width:36em;margin-bottom:22px;}
+.yg-hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px;}
+.yg-btn{
+  border:0;border-radius:12px;padding:12px 26px;font-size:15px;font-weight:600;
+  transition:.24s;display:inline-flex;align-items:center;gap:8px;
+}
+.yg-btn-main{
+  color:#fff;background:linear-gradient(135deg,var(--yg-amber),var(--yg-amber-deep));
+  box-shadow:0 8px 22px rgba(224,74,43,.3);
+}
+.yg-btn-main:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(224,74,43,.38);}
+.yg-btn-ghost{background:#fff;color:var(--yg-plum);border:1px solid var(--yg-line);}
+.yg-btn-ghost:hover{border-color:var(--yg-amber);color:var(--yg-amber-deep);}
+.yg-hero-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;}
+.yg-stat{
+  background:#fff;border:1px solid var(--yg-line);border-radius:14px;
+  padding:13px 15px;min-width:0;
+}
+.yg-stat b{display:block;font-size:22px;color:var(--yg-plum);letter-spacing:.5px;}
+.yg-stat span{font-size:12.5px;color:var(--yg-ink-soft);}
+.yg-hero-visual{position:relative;min-width:0;}
+.yg-hero-figure{
+  border-radius:26px;overflow:hidden;box-shadow:0 22px 54px rgba(138,47,94,.22);
+  aspect-ratio:16/11;background:var(--yg-sand);
+}
+.yg-hero-figure img{width:100%;height:100%;object-fit:cover;}
+.yg-hero-float{
+  position:absolute;left:-18px;bottom:26px;background:#fff;border-radius:16px;
+  padding:12px 17px;box-shadow:var(--yg-shadow);display:flex;gap:11px;align-items:center;
+  max-width:250px;
+}
+.yg-hero-float .yg-play{
+  width:38px;height:38px;border-radius:50%;flex:0 0 auto;
+  background:linear-gradient(135deg,var(--yg-amber),var(--yg-plum));
+  display:grid;place-items:center;
+}
+.yg-hero-float .yg-play::after{
+  content:"";border-left:11px solid #fff;border-top:7px solid transparent;border-bottom:7px solid transparent;margin-left:3px;
+}
+.yg-hero-float b{font-size:13.5px;display:block;line-height:1.4;}
+.yg-hero-float span{font-size:11.5px;color:var(--yg-ink-soft);}
+
+/* ===== section base ===== */
+.yg-section{max-width:1320px;margin:0 auto;padding:clamp(38px,5vw,68px) clamp(16px,4vw,54px);}
+.yg-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:28px;flex-wrap:wrap;}
+.yg-sec-head h2{font-size:clamp(23px,3vw,31px);letter-spacing:.6px;}
+.yg-sec-head h2 em{
+  font-style:normal;color:var(--yg-amber-deep);position:relative;padding-bottom:4px;
+}
+.yg-sec-head h2 em::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:3px;border-radius:2px;
+  background:linear-gradient(90deg,var(--yg-amber),transparent);
+}
+.yg-sec-sub{font-size:14px;color:var(--yg-ink-soft);max-width:44em;}
+.yg-sec-note{font-size:13px;color:var(--yg-plum);background:var(--yg-sand);padding:5px 14px;border-radius:999px;white-space:nowrap;}
+
+/* ===== focus / featured ===== */
+.yg-focus{display:grid;grid-template-columns:1.15fr 1fr;gap:26px;align-items:start;}
+.yg-focus-main{
+  background:#fff;border-radius:var(--yg-radius);overflow:hidden;box-shadow:var(--yg-shadow);
+  border:1px solid var(--yg-line);transition:.3s;
+}
+.yg-focus-main:hover{transform:translateY(-4px);}
+.yg-focus-main figure{margin:0;aspect-ratio:16/9;overflow:hidden;position:relative;}
+.yg-focus-main img{width:100%;height:100%;object-fit:cover;transition:transform .5s;}
+.yg-focus-main:hover img{transform:scale(1.04);}
+.yg-badge{
+  position:absolute;top:14px;left:14px;background:rgba(28,21,32,.72);color:#fff;
+  font-size:12px;padding:4px 12px;border-radius:999px;backdrop-filter:blur(4px);letter-spacing:.6px;
+}
+.yg-focus-body{padding:20px 22px 22px;}
+.yg-focus-body h3{font-size:20px;margin-bottom:9px;}
+.yg-focus-body p{font-size:14px;color:var(--yg-ink-soft);margin-bottom:13px;}
+.yg-meta{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--yg-ink-soft);margin-bottom:14px;}
+.yg-meta b{color:var(--yg-plum);}
+.yg-tags{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px;}
+.yg-tag{
+  font-size:12px;padding:3px 11px;border-radius:999px;background:var(--yg-sand);
+  color:var(--yg-plum);border:1px solid transparent;transition:.2s;
+}
+.yg-tag:hover{border-color:var(--yg-amber);color:var(--yg-amber-deep);}
+.yg-actions{display:flex;gap:9px;flex-wrap:wrap;}
+.yg-act{
+  border:1px solid var(--yg-line);background:#fff;border-radius:999px;
+  font-size:12.5px;padding:6px 14px;color:var(--yg-ink-soft);transition:.2s;
+  display:inline-flex;align-items:center;gap:6px;
+}
+.yg-act:hover{border-color:var(--yg-amber);color:var(--yg-amber-deep);}
+.yg-act.yg-liked{background:var(--yg-amber);border-color:var(--yg-amber);color:#fff;}
+.yg-act.yg-saved{background:var(--yg-plum);border-color:var(--yg-plum);color:#fff;}
+
+.yg-focus-list{display:grid;gap:13px;min-width:0;}
+.yg-focus-item{
+  display:grid;grid-template-columns:92px minmax(0,1fr);gap:14px;
+  background:#fff;border:1px solid var(--yg-line);border-radius:15px;padding:11px;
+  transition:.26s;
+}
+.yg-focus-item:hover{border-color:var(--yg-amber);transform:translateX(3px);}
+.yg-focus-thumb{
+  border-radius:11px;overflow:hidden;aspect-ratio:1/1;background:var(--yg-sand);
+}
+.yg-focus-thumb img{width:100%;height:100%;object-fit:cover;}
+.yg-focus-item h3{font-size:15px;margin-bottom:5px;line-height:1.45;}
+.yg-focus-item p{font-size:12.5px;color:var(--yg-ink-soft);margin:0 0 7px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+
+/* ===== archive (video list) ===== */
+.yg-archive{background:linear-gradient(180deg,#fff,var(--yg-cream));}
+.yg-list{display:grid;gap:16px;}
+.yg-list-row{
+  display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:18px;align-items:center;
+  background:#fff;border:1px solid var(--yg-line);border-radius:15px;padding:17px 20px;
+  transition:.24s;min-width:0;
+}
+.yg-list-row:hover{border-color:var(--yg-plum);box-shadow:0 8px 22px rgba(138,47,94,.1);}
+.yg-list-idx{
+  font-size:19px;font-weight:800;color:var(--yg-amber);letter-spacing:.5px;
+  font-variant-numeric:tabular-nums;
+}
+.yg-list-row h3{font-size:16px;margin-bottom:5px;}
+.yg-list-row p{font-size:13px;color:var(--yg-ink-soft);margin:0 0 7px;}
+.yg-list-row .yg-meta{margin:0;}
+
+/* ===== special / timeline ===== */
+.yg-special{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+.yg-special-card{
+  background:#fff;border:1px solid var(--yg-line);border-radius:var(--yg-radius);
+  padding:24px;box-shadow:var(--yg-shadow);
+}
+.yg-special-card h3{font-size:19px;margin-bottom:8px;}
+.yg-special-card > p{font-size:13.5px;color:var(--yg-ink-soft);margin-bottom:14px;}
+.yg-special-status{
+  display:inline-block;font-size:12px;padding:3px 11px;border-radius:999px;
+  background:var(--yg-sand);color:var(--yg-plum);margin-bottom:14px;
+}
+.yg-special-status.yg-live{background:#eaf7ee;color:#2e8f52;}
+.yg-special-items{display:grid;gap:10px;}
+.yg-special-items li{
+  font-size:13.5px;color:var(--yg-ink-soft);padding-left:16px;position:relative;
+}
+.yg-special-items li::before{
+  content:"";position:absolute;left:0;top:.68em;width:6px;height:6px;border-radius:50%;
+  background:var(--yg-amber);
+}
+.yg-special-items b{color:var(--yg-ink);font-weight:600;display:block;}
+
+.yg-timeline{position:relative;padding-left:26px;margin-top:8px;}
+.yg-timeline::before{
+  content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;
+  background:linear-gradient(180deg,var(--yg-amber),var(--yg-plum),transparent);
+}
+.yg-tl-item{position:relative;padding-bottom:22px;}
+.yg-tl-item::before{
+  content:"";position:absolute;left:-25px;top:5px;width:13px;height:13px;border-radius:50%;
+  background:#fff;border:3px solid var(--yg-amber);
+}
+.yg-tl-item h3{font-size:15.5px;margin-bottom:5px;}
+.yg-tl-item p{font-size:13px;color:var(--yg-ink-soft);margin:0;}
+
+/* ===== authors ===== */
+.yg-authors-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;}
+.yg-author{
+  background:#fff;border:1px solid var(--yg-line);border-radius:var(--yg-radius);
+  padding:22px;transition:.26s;min-width:0;
+}
+.yg-author:hover{transform:translateY(-3px);box-shadow:var(--yg-shadow);border-color:var(--yg-amber);}
+.yg-author-top{display:flex;gap:14px;align-items:center;margin-bottom:12px;}
+.yg-avatar{
+  width:54px;height:54px;border-radius:50%;flex:0 0 auto;display:grid;place-items:center;
+  color:#fff;font-weight:700;font-size:20px;letter-spacing:.5px;
+}
+.yg-author-top h3{font-size:16.5px;margin-bottom:3px;}
+.yg-author-top span{font-size:12.5px;color:var(--yg-plum);}
+.yg-author p{font-size:13.5px;color:var(--yg-ink-soft);margin:0 0 12px;}
+.yg-author-stats{display:flex;gap:18px;font-size:12.5px;color:var(--yg-ink-soft);}
+.yg-author-stats b{color:var(--yg-ink);}
+
+/* ===== comments ===== */
+.yg-comments{display:grid;grid-template-columns:1.4fr 1fr;gap:24px;align-items:start;}
+.yg-comment-list{display:grid;gap:13px;}
+.yg-comment{
+  background:#fff;border:1px solid var(--yg-line);border-radius:14px;padding:16px 18px;
+}
+.yg-comment-user{display:flex;gap:10px;align-items:center;margin-bottom:8px;}
+.yg-comment-user .yg-avatar{width:34px;height:34px;font-size:14px;}
+.yg-comment-user b{font-size:13.5px;}
+.yg-comment-user span{font-size:11.5px;color:var(--yg-ink-soft);}
+.yg-comment p{font-size:13.5px;color:var(--yg-ink-soft);margin:0 0 8px;}
+.yg-comment-foot{font-size:12px;color:var(--yg-ink-soft);display:flex;gap:14px;flex-wrap:wrap;}
+.yg-rating-card{
+  background:linear-gradient(160deg,#fff,var(--yg-sand));border:1px solid var(--yg-line);
+  border-radius:var(--yg-radius);padding:24px;text-align:center;box-shadow:var(--yg-shadow);
+}
+.yg-rating-card b{font-size:44px;color:var(--yg-plum);display:block;line-height:1.15;}
+.yg-stars{color:var(--yg-gold);font-size:19px;letter-spacing:3px;margin:6px 0 12px;}
+.yg-rating-rows{display:grid;gap:9px;margin-top:16px;text-align:left;}
+.yg-rating-row{display:grid;grid-template-columns:52px minmax(0,1fr) 36px;gap:9px;align-items:center;font-size:12px;color:var(--yg-ink-soft);}
+.yg-bar{height:6px;border-radius:4px;background:#fff;overflow:hidden;}
+.yg-bar i{display:block;height:100%;border-radius:4px;background:linear-gradient(90deg,var(--yg-amber),var(--yg-plum));}
+
+/* ===== insights / faq / coop ===== */
+.yg-mini-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;}
+.yg-mini{
+  background:#fff;border:1px solid var(--yg-line);border-radius:15px;padding:20px;transition:.24s;min-width:0;
+}
+.yg-mini:hover{border-color:var(--yg-amber);transform:translateY(-3px);}
+.yg-mini h3{font-size:15.5px;margin-bottom:7px;}
+.yg-mini p{font-size:13px;color:var(--yg-ink-soft);margin:0;}
+.yg-mini .yg-k{font-size:11.5px;letter-spacing:1.4px;color:var(--yg-amber-deep);font-weight:700;margin-bottom:7px;display:block;}
+
+.yg-faq{display:grid;gap:11px;}
+.yg-faq details{
+  background:#fff;border:1px solid var(--yg-line);border-radius:13px;padding:0;
+  overflow:hidden;transition:.2s;
+}
+.yg-faq details[open]{border-color:var(--yg-amber);}
+.yg-faq summary{
+  list-style:none;cursor:pointer;padding:15px 20px;font-size:14.5px;font-weight:600;
+  display:flex;justify-content:space-between;gap:14px;align-items:center;
+}
+.yg-faq summary::-webkit-details-marker{display:none;}
+.yg-faq summary::after{content:"+";color:var(--yg-amber);font-size:19px;font-weight:400;line-height:1;}
+.yg-faq details[open] summary::after{content:"−";}
+.yg-faq details p{font-size:13.5px;color:var(--yg-ink-soft);padding:0 20px 16px;margin:0;}
+
+.yg-coop{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;}
+.yg-coop div{
+  background:#fff;border:1px dashed var(--yg-line);border-radius:13px;
+  padding:16px 12px;text-align:center;font-size:13.5px;color:var(--yg-ink-soft);transition:.22s;
+}
+.yg-coop div:hover{border-color:var(--yg-plum);color:var(--yg-plum);}
+
+.yg-news{display:grid;gap:11px;}
+.yg-news li{
+  background:#fff;border-left:3px solid var(--yg-amber);border-radius:0 12px 12px 0;
+  padding:13px 17px;font-size:13.5px;color:var(--yg-ink-soft);
+  display:flex;gap:14px;flex-wrap:wrap;align-items:baseline;
+}
+.yg-news li b{color:var(--yg-ink);font-weight:600;}
+.yg-news li time{font-size:12px;color:var(--yg-plum);margin-left:auto;white-space:nowrap;}
+
+/* ===== keyword analysis ===== */
+.yg-analysis{background:#fff;border:1px solid var(--yg-line);border-radius:22px;padding:clamp(22px,3.4vw,42px);}
+.yg-analysis h3{font-size:18px;margin:22px 0 9px;color:var(--yg-plum);}
+.yg-analysis h3:first-child{margin-top:0;}
+.yg-analysis p{font-size:14.5px;color:var(--yg-ink-soft);}
+.yg-analysis .yg-quote{
+  border-left:3px solid var(--yg-amber);padding:10px 18px;background:var(--yg-sand);
+  border-radius:0 12px 12px 0;font-size:14px;color:var(--yg-plum);margin:16px 0;
+}
+
+/* ===== footer ===== */
+.yg-footer{
+  background:var(--yg-ink);color:#cbbfc9;margin-top:30px;
+  padding:clamp(34px,5vw,58px) clamp(16px,4vw,54px) 26px;
+}
+.yg-footer-inner{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;}
+.yg-footer h4{color:#fff;font-size:14.5px;margin-bottom:12px;letter-spacing:.6px;}
+.yg-footer p,.yg-footer li{font-size:13px;line-height:2;}
+.yg-footer a:hover{color:var(--yg-amber);}
+.yg-footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+.yg-footer-brand .yg-brand-mark{box-shadow:none;}
+.yg-footer-brand b{color:#fff;font-size:16.5px;}
+.yg-footer-bottom{
+  max-width:1320px;margin:26px auto 0;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);
+  font-size:12.5px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+}
+
+/* ===== toast & back top ===== */
+.yg-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+  background:rgba(28,21,32,.92);color:#fff;font-size:13.5px;padding:11px 22px;
+  border-radius:999px;opacity:0;pointer-events:none;transition:.3s;z-index:400;
+}
+.yg-toast.yg-show{opacity:1;transform:translate(-50%,0);}
+.yg-backtop{
+  position:fixed;right:22px;bottom:26px;width:46px;height:46px;border-radius:50%;
+  border:0;background:linear-gradient(135deg,var(--yg-amber),var(--yg-plum));color:#fff;
+  font-size:18px;box-shadow:var(--yg-shadow);opacity:0;pointer-events:none;transition:.3s;z-index:300;
+}
+.yg-backtop.yg-show{opacity:1;pointer-events:auto;}
+
+/* ===== responsive ===== */
+@media(max-width:1024px){
+  .yg-hero-grid{grid-template-columns:1fr;}
+  .yg-focus{grid-template-columns:1fr;}
+  .yg-special{grid-template-columns:1fr;}
+  .yg-comments{grid-template-columns:1fr;}
+  .yg-mini-grid{grid-template-columns:1fr 1fr;}
+  .yg-footer-inner{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:760px){
+  .yg-header{flex-wrap:wrap;gap:12px;}
+  .yg-nav{
+    order:3;flex-basis:100%;flex-direction:column;gap:2px;
+    max-height:0;overflow:hidden;transition:max-height .32s ease;
+  }
+  .yg-nav.yg-open{max-height:420px;}
+  .yg-nav a{padding:9px 12px;}
+  .yg-burger{display:grid;}
+  .yg-tools{margin-left:auto;}
+  .yg-search input{width:88px;}
+  .yg-authors-grid{grid-template-columns:1fr;}
+  .yg-mini-grid{grid-template-columns:1fr;}
+  .yg-coop{grid-template-columns:1fr 1fr;}
+  .yg-list-row{grid-template-columns:36px minmax(0,1fr);}
+  .yg-list-row .yg-actions{grid-column:1/-1;justify-content:flex-start;}
+  .yg-hero-stats{grid-template-columns:1fr;}
+  .yg-footer-inner{grid-template-columns:1fr;}
+  .yg-hero-float{position:static;margin-top:14px;max-width:none;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="yg-sticky">
+  <div class="yg-announce">
+    <b>官方发布</b>
+    <em>新版本已上线：尤果网免费观看新增「创作者合集」频道，首批 36 位创作者入驻，支持高清多端续看；同期开放秋季原创影像征集报名入口。</em>
+  </div>
+  <header class="yg-header">
+    <a class="yg-brand" href="#yg-top" aria-label="尤果网免费观看官网首页">
+      <span class="yg-brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M8 5.5 L19 12 L8 18.5 Z" fill="#fff"/></svg>
+      </span>
+      <span class="yg-brand-txt">
+        <strong>尤果网免费观看</strong>
+        <span>YOUGUO VIDEO</span>
+      </span>
+    </a>
+    <nav class="yg-nav" id="ygNav" aria-label="主导航">
+      <a href="#yg-top" class="yg-on">首页</a>
+      <a href="#yg-focus">焦点推荐</a>
+      <a href="#yg-archive">精品视频</a>
+      <a href="#yg-special">专题企划</a>
+      <a href="#yg-authors">创作者</a>
+      <a href="#yg-comments">用户口碑</a>
+      <a href="#yg-analysis">品牌解析</a>
+      <a href="#yg-faq">帮助中心</a>
+    </nav>
+    <div class="yg-tools">
+      <form class="yg-search" id="ygSearchForm" role="search" onsubmit="return false;">
+        <input type="search" id="ygSearchInput" placeholder="搜索视频 / 创作者" aria-label="站内搜索">
+        <button type="button" id="ygSearchBtn">搜索</button>
+      </form>
+      <button class="yg-burger" id="ygBurger" aria-label="展开导航菜单" aria-expanded="false" aria-controls="ygNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="yg-search-feedback"><p id="ygSearchFeedback" role="status"></p></div>
+</div>
+
+<main id="yg-top">
+
+  <!-- S2 hero -->
+  <section class="yg-hero" aria-labelledby="ygHeroTitle">
+    <div class="yg-hero-grid">
+      <div>
+        <span class="yg-hero-tag"><i></i>官方网站 · 高清正版 · 持续运营</span>
+        <h1 id="ygHeroTitle"><span>尤果网免费观看</span></h1>
+        <p class="yg-hero-lead">一个把原创影像、创作者社区与品牌故事放在同一张屏幕上的视频平台，让每一次点击都通向真实的表达。</p>
+        <p class="yg-hero-intro">作为深耕视频内容领域的企业，我们以官方网站为窗口，持续建设高品质内容生态：正版授权、高清呈现、专业编目，让用户在有温度的内容里停留更久。我们相信，值得信赖的平台从不喧哗，只用作品说话。</p>
+        <div class="yg-hero-btns">
+          <a class="yg-btn yg-btn-main" href="#yg-focus">观看焦点内容</a>
+          <a class="yg-btn yg-btn-ghost" href="#yg-special">查看专题企划</a>
+          <a class="yg-btn yg-btn-ghost" href="#yg-authors">认识创作者</a>
+          <a class="yg-btn yg-btn-ghost" href="#yg-submit">我要投稿</a>
+        </div>
+        <div class="yg-hero-stats">
+          <div class="yg-stat"><b>12,800+</b><span>原创精品内容存量</span></div>
+          <div class="yg-stat"><b>4,300+</b><span>签约与入驻创作者</span></div>
+          <div class="yg-stat"><b>98.6%</b><span>用户口碑好评率</span></div>
+        </div>
+      </div>
+      <div class="yg-hero-visual">
+        <div class="yg-hero-figure">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 550'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232b1b2e'/%3E%3Cstop offset='0.55' stop-color='%236d2a4a'/%3E%3Cstop offset='1' stop-color='%23ff6b4a'/%3E%3C/linearGradient%3E%3ClinearGradient id='glow' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffd9a0'/%3E%3Cstop offset='1' stop-color='%23e9a03b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='550' fill='url(%23sky)'/%3E%3Ccircle cx='600' cy='150' r='110' fill='url(%23glow)' opacity='0.9'/%3E%3Ccircle cx='600' cy='150' r='150' fill='none' stroke='%23ffd9a0' stroke-opacity='0.35' stroke-width='2'/%3E%3Cpath d='M0 400 Q160 320 330 390 T800 360 L800 550 L0 550 Z' fill='%231c1520' opacity='0.85'/%3E%3Cpath d='M0 455 Q200 400 390 455 T800 430 L800 550 L0 550 Z' fill='%231c1520'/%3E%3Cg opacity='0.95'%3E%3Crect x='120' y='300' width='74' height='150' rx='6' fill='%232b1b2e'/%3E%3Crect x='132' y='316' width='20' height='24' rx='3' fill='%23ffd9a0'/%3E%3Crect x='162' y='316' width='20' height='24' rx='3' fill='%23ffd9a0' opacity='0.6'/%3E%3Crect x='132' y='352' width='20' height='24' rx='3' fill='%23ffd9a0' opacity='0.4'/%3E%3Crect x='232' y='340' width='58' height='110' rx='6' fill='%232b1b2e'/%3E%3Crect x='244' y='356' width='14' height='20' rx='3' fill='%23ffd9a0' opacity='0.8'/%3E%3Crect x='266' y='356' width='14' height='20' rx='3' fill='%23ffd9a0' opacity='0.45'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='420' cy='250' r='34' fill='%23ffffff' opacity='0.14'/%3E%3Cpath d='M410 236 L438 250 L410 264 Z' fill='%23ffffff' opacity='0.9'/%3E%3C/g%3E%3C/svg%3E" alt="尤果网免费观看官网首屏主视觉：暖橙暮色中的城市剪影与播放标识" width="800" height="550">
+        </div>
+        <div class="yg-hero-float">
+          <span class="yg-play" aria-hidden="true"></span>
+          <div>
+            <b>本周官方精选首播</b>
+            <span>共 24 部高清内容 · 每日 20:00 更新</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 focus -->
+  <section class="yg-section" id="yg-focus" aria-labelledby="ygFocusTitle">
+    <div class="yg-sec-head">
+      <div>
+        <h2 id="ygFocusTitle">焦点推荐<em>· 尤果网免费观看本周主推</em></h2>
+        <p class="yg-sec-sub">由内容编辑部与创作者共同挑选，覆盖日常记录、经验分享与深度访谈三类方向，优先呈现高清正版作品。</p>
+      </div>
+      <span class="yg-sec-note">每日 20:00 更新</span>
+    </div>
+
+    <div class="yg-focus">
+      <article class="yg-focus-main">
+        <figure>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='w1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fff1e6'/%3E%3Cstop offset='1' stop-color='%23ffb99a'/%3E%3C/linearGradient%3E%3ClinearGradient id='w2' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23c2185b'/%3E%3Cstop offset='1' stop-color='%23ff6b4a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23w1)'/%3E%3Ccircle cx='180' cy='120' r='90' fill='%23ffffff' opacity='0.55'/%3E%3Crect x='90' y='230' width='620' height='150' rx='18' fill='url(%23w2)' opacity='0.9'/%3E%3Crect x='130' y='270' width='200' height='12' rx='6' fill='%23ffffff' opacity='0.8'/%3E%3Crect x='130' y='300' width='300' height='10' rx='5' fill='%23ffffff' opacity='0.5'/%3E%3Crect x='130' y='326' width='240' height='10' rx='5' fill='%23ffffff' opacity='0.35'/%3E%3Ccircle cx='620' cy='320' r='46' fill='%23ffffff' opacity='0.9'/%3E%3Cpath d='M608 302 L640 320 L608 338 Z' fill='%23c2185b'/%3E%3C/svg%3E" alt="焦点内容封面：暖色渐变画面中的影像排版与播放按钮" width="800" height="450">
+          <span class="yg-badge">官方首播</span>
+        </figure>
+        <div class="yg-focus-body">
+          <h3>《一日一镜》：把普通的一天剪成三分钟的生活影像</h3>
+          <p>跟拍七位普通用户，从清晨的第一杯水到深夜的台灯，用镜头记录日常里不被注意的细节。全片以自然光拍摄，保留环境声，是一次关于真实与陪伴的影像实验，也是本季尤果网免费观看重点推荐内容。</p>
+          <div class="yg-tags">
+            <a class="yg-tag" href="#yg-archive">日常记录</a>
+            <a class="yg-tag" href="#yg-archive">治愈影像</a>
+            <a class="yg-tag" href="#yg-archive">原创</a>
+          </div>
+          <div class="yg-meta">
+            <span>作者：<b>林汐</b></span>
+            <span>播放 <b>128.4万</b></span>
+            <span>点赞 <b>8.2万</b></span>
+            <span>收藏 <b>3.1万</b></span>
+          </div>
+          <div class="yg-actions">
+            <button class="yg-act yg-like" data-count="82000">点赞</button>
+            <button class="yg-act yg-save">收藏</button>
+            <button class="yg-act yg-copy" data-label="《一日一镜》：把普通的一天剪成三分钟的生活影像">复制链接</button>
+            <button class="yg-act yg-share">分享</button>
+          </div>
+        </div>
+      </article>
+
+      <div class="yg-focus-list">
+        <article class="yg-focus-item">
+          <div class="yg-focus-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%232b1b2e'/%3E%3Ccircle cx='100' cy='86' r='44' fill='%23ff6b4a' opacity='0.85'/%3E%3Cpath d='M0 150 Q100 120 200 150 L200 200 L0 200 Z' fill='%238a2f5e'/%3E%3Ccircle cx='100' cy='86' r='18' fill='%23fff1e6'/%3E%3C/svg%3E" alt="经验分享视频缩略图：深色背景中的橙色圆形与地形剪影" width="200" height="200">
+          </div>
+          <div>
+            <h3>第一次拍 Vlog 该带什么？一份来自老用户的清单</h3>
+            <p>从稳定器到收音麦，从存储卡到备用电池，创作者小满按预算分三档给出具体建议。</p>
+            <div class="yg-meta"><span>经验分享</span><span>播放 46.9万</span></div>
+          </div>
+        </article>
+        <article class="yg-focus-item">
+          <div class="yg-focus-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23fdf6f1'/%3E%3Crect x='30' y='40' width='140' height='90' rx='10' fill='%23e9a03b' opacity='0.85'/%3E%3Ccircle cx='100' cy='130' r='8' fill='%238a2f5e'/%3E%3Crect x='50' y='150' width='100' height='10' rx='5' fill='%23c2185b' opacity='0.55'/%3E%3C/svg%3E" alt="教程干货视频缩略图：米白底上的琥珀色屏幕与指示点" width="200" height="200">
+          </div>
+          <div>
+            <h3>剪辑节奏课：五分钟讲清卡点、留白与转场</h3>
+            <p>用三段实拍素材对照讲解，附带可复用的时间线结构，适合刚入门的创作者。</p>
+            <div class="yg-meta"><span>教程干货</span><span>播放 62.3万</span></div>
+          </div>
+        </article>
+        <article class="yg-focus-item">
+          <div class="yg-focus-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%238a2f5e'/%3E%3Ccircle cx='70' cy='80' r='26' fill='%23ffd9a0'/%3E%3Ccircle cx='130' cy='80' r='26' fill='%23ffd9a0' opacity='0.55'/%3E%3Crect x='50' y='130' width='100' height='12' rx='6' fill='%23ffffff' opacity='0.7'/%3E%3C/svg%3E" alt="人物访谈视频缩略图：梅花底与双圆头像构图" width="200" height="200">
+          </div>
+          <div>
+            <h3>访谈：做了六年城市纪录片，我如何选一个拍摄对象</h3>
+            <p>导演周野谈选题标准、沟通伦理与被拍摄者的信任建立，全程实录。</p>
+            <div class="yg-meta"><span>人物访谈</span><span>播放 38.1万</span></div>
+          </div>
+        </article>
+        <article class="yg-focus-item">
+          <div class="yg-focus-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23f6e9df'/%3E%3Cpath d='M20 160 L70 80 L110 130 L150 60 L180 160 Z' fill='%232b1b2e' opacity='0.75'/%3E%3Ccircle cx='55' cy='55' r='16' fill='%23ff6b4a'/%3E%3C/svg%3E" alt="城市探索视频缩略图：沙色底上的山形折线与橙色太阳" width="200" height="200">
+          </div>
+          <div>
+            <h3>凌晨四点出发：一座城市醒来的四十分钟</h3>
+            <p>从早餐铺到首班车，镜头跟随城市苏醒的节奏，声画同步记录。</p>
+            <div class="yg-meta"><span>城市探索</span><span>播放 71.6万</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 archive list -->
+  <section class="yg-section yg-archive" id="yg-archive" aria-labelledby="ygArchiveTitle">
+    <div class="yg-sec-head">
+      <div>
+        <h2 id="ygArchiveTitle">精品视频列表<em>· 全站高清索引</em></h2>
+        <p class="yg-sec-sub">以文字索引为主的内容目录，方便快速浏览与检索。尤果网免费观看坚持正版授权，所有条目均标注作者、数据与标签。</p>
+      </div>
+      <span class="yg-sec-note">共 5 条精选 · 持续更新</span>
+    </div>
+
+    <div class="yg-list">
+      <article class="yg-list-row">
+        <span class="yg-list-idx">01</span>
+        <div>
+          <h3>深度测评：三款入门麦克风在真实房间里的表现</h3>
+          <p>同一段台词、同一房间、同一机位，只换麦克风。测评维度包括底噪、齿音与近讲效应，附对照波形图。适合播客与口播创作者参考。</p>
+          <div class="yg-tags"><span class="yg-tag">深度测评</span><span class="yg-tag">实用技巧</span></div>
+          <div class="yg-meta"><span>作者：<b>陈屿</b></span><span>播放 21.8万</span><span>点赞 1.4万</span><span>收藏 8,900</span></div>
+        </div>
+        <div class="yg-actions">
+          <button class="yg-act yg-like" data-count="14000">点赞</button>
+          <button class="yg-act yg-save">收藏</button>
+          <button class="yg-act yg-copy" data-label="深度测评：三款入门麦克风在真实房间里的表现">复制链接</button>
+        </div>
+      </article>
+
+      <article class="yg-list-row">
+        <span class="yg-list-idx">02</span>
+        <div>
+          <h3>在家做一份不用烤箱的甜点：从配方到摆盘</h3>
+          <p>奶油、饼干碎与当季水果的简单组合。视频分步骤演示冷藏时间与装杯顺序，结尾给出三种低成本摆盘思路，适合周末亲子一起动手。</p>
+          <div class="yg-tags"><span class="yg-tag">美食烹饪</span><span class="yg-tag">生活方式</span></div>
+          <div class="yg-meta"><span>作者：<b>阿禾</b></span><span>播放 33.5万</span><span>点赞 2.6万</span><span>收藏 1.7万</span></div>
+        </div>
+        <div class="yg-actions">
+          <button class="yg-act yg-like" data-count="26000">点赞</button>
+          <button class="yg-act yg-save">收藏</button>
+          <button class="yg-act yg-copy" data-label="在家做一份不用烤箱的甜点：从配方到摆盘">复制链接</button>
+        </div>
+      </article>
+
+      <article class="yg-list-row">
+        <span class="yg-list-idx">03</span>
+        <div>
+          <h3>创作幕后：一条两分钟短片背后的十四次重拍</h3>
+          <p>完整保留筹备、勘景、试拍与补拍的时间线，作者在片尾复盘了光线判断失误与演员调度问题，是难得的失败经验分享。</p>
+          <div class="yg-tags"><span class="yg-tag">创作幕后</span><span class="yg-tag">经验分享</span></div>
+          <div class="yg-meta"><span>作者：<b>林汐</b></span><span>播放 19.2万</span><span>点赞 1.1万</span><span>收藏 9,600</span></div>
+        </div>
+        <div class="yg-actions">
+          <button class="yg-act yg-like" data-count="11000">点赞</button>
+          <button class="yg-act yg-save">收藏</button>
+          <button class="yg-act yg-copy" data-label="创作幕后：一条两分钟短片背后的十四次重拍">复制链接</button>
+        </div>
+      </article>
+
+      <article class="yg-list-row">
+        <span class="yg-list-idx">04</span>
+        <div>
+          <h3>城市探索：沿着一条老街找四家开了二十年的店</h3>
+          <p>不刻意煽情，只让店主自己讲。理发店、钟表铺、裁缝摊与旧书店，四段闲聊构成了一部城市生活切片，画面以手持跟拍为主。</p>
+          <div class="yg-tags"><span class="yg-tag">城市探索</span><span class="yg-tag">在地文化</span></div>
+          <div class="yg-meta"><span>作者：<b>周野</b></span><span>播放 52.7万</span><span>点赞 3.9万</span><span>收藏 2.2万</span></div>
+        </div>
+        <div class="yg-actions">
+          <button class="yg-act yg-like" data-count="39000">点赞</button>
+          <button class="yg-act yg-save">收藏</button>
+          <button class="yg-act yg-copy" data-label="城市探索：沿着一条老街找四家开了二十年的店">复制链接</button>
+        </div>
+      </article>
+
+      <article class="yg-list-row">
+        <span class="yg-list-idx">05</span>
+        <div>
+          <h3>知识科普：为什么画面会「抖」？三分钟讲清快门与帧率</h3>
+          <p>用慢动作对照和实拍演示解释运动模糊、频闪与果冻效应，配合图解总结一张参数速查表，可直接保存使用。</p>
+          <div class="yg-tags"><span class="yg-tag">知识科普</span><span class="yg-tag">教程干货</span></div>
+          <div class="yg-meta"><span>作者：<b>顾白</b></span><span>播放 41.3万</span><span>点赞 2.9万</span><span>收藏 2.4万</span></div>
+        </div>
+        <div class="yg-actions">
+          <button class="yg-act yg-like" data-count="29000">点赞</button>
+          <button class="yg-act yg-save">收藏</button>
+          <button class="yg-act yg-copy" data-label="知识科普：为什么画面会抖？三分钟讲清快门与帧率">复制链接</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- S4 special + timeline -->
+  <section class="yg-section" id="yg-special" aria-labelledby="ygSpecialTitle">
+    <div class="yg-sec-head">
+      <div>
+        <h2 id="ygSpecialTitle">专题企划与品牌故事<em>· 长期栏目</em></h2>
+        <p class="yg-sec-sub">尤果网免费观看围绕「真实、陪伴、成长」持续运营三个长期企划，每个企划都有明确的更新节奏与选片标准。</p>
+      </div>
+    </div>
+
+    <div class="yg-special">
+      <div class="yg-special-card">
+        <h3>专题一：小城的一天</h3>
+        <span class="yg-special-status yg-live">更新中 · 每周三更</span>
+        <p>把镜头交给非一线城市的普通人，记录他们如何安排一天。企划不设旁白，全部保留现场声，强调真实质感。</p>
+        <ul class="yg-special-items">
+          <li><b>第 12 期 · 江边早餐铺的凌晨三点</b>老板夫妇经营十六年，镜头记录第一锅豆浆沸腾的瞬间。</li>
+          <li><b>第 13 期 · 小镇图书馆的管理员</b>一天整理 400 本归还书籍，她说这是最安静的工作。</li>
+          <li><b>第 14 期 · 修车棚里的午后</b>三个小时的等待、两把扳手与一壶凉茶。</li>
+        </ul>
+      </div>
+
+      <div class="yg-special-card">
+        <h3>专题二：创作者第一课</h3>
+        <span class="yg-special-status">已完结 · 共 18 集</span>
+        <p>面向刚起步的创作者，从选题、拍摄、剪辑到发布与复盘，邀请平台内六位资深作者分模块讲解，全部免费开放观看。</p>
+        <ul class="yg-special-items">
+          <li><b>选题课：你的第一个视频该拍什么</b>用三个提问帮助创作者找到可持续的选题方向。</li>
+          <li><b>拍摄课：手机也能拍出稳定画面</b>包含六种手持姿势与三种低成本稳定方案。</li>
+          <li><b>发布课：标题、封面与标签的取舍</b>强调不过度包装，让内容与预期一致。</li>
+        </ul>
+      </div>
+
+      <div class="yg-special-card">
+        <h3>专题三：我们的九年</h3>
+        <span class="yg-special-status">品牌故事 · 图文影像合集</span>
+        <p>从一间不足二十平方米的剪辑室起步，到如今覆盖多端的视频内容平台。这一企划以时间线方式回顾品牌成长中的关键节点。</p>
+        <div class="yg-timeline">
+          <div class="yg-tl-item">
+            <h3>2017 · 起点</h3>
+            <p>团队三人，设备两台，第一条自制内容上线，累计播放不足千次。</p>
+          </div>
+          <div class="yg-tl-item">
+            <h3>2020 · 建立标准</h3>
+            <p>发布内容画质与授权规范，开始系统化引入创作者的原创作品。</p>
+          </div>
+          <div class="yg-tl-item">
+            <h3>2023 · 社区成形</h3>
+            <p>创作者社区开放注册，用户评价体系上线，口碑成为重要的推荐依据。</p>
+          </div>
+          <div class="yg-tl-item">
+            <h3>2026 · 持续运营</h3>
+            <p>推出创作者合集频道，完善高清多端体验，继续深耕垂直领域内容。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="yg-special-card">
+        <h3>专题四：镜头之外</h3>
+        <span class="yg-special-status yg-live">招募中 · 新一轮报名开放</span>
+        <p>一个把「失败素材」放进正片的企划。我们鼓励创作者上传未采用片段，并讲述它为什么被放弃，用真实换取共鸣。</p>
+        <ul class="yg-special-items">
+          <li><b>投稿要求</b>单条 1–3 分钟，需附一段文字说明，注明拍摄时间与设备。</li>
+          <li><b>评选方式</b>由编辑部初选 20 条，社区投票产生最终 6 条入选。</li>
+          <li><b>入选权益</b>官网首页推荐位、创作者认证标识与年度合辑收录。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- S5 authors -->
+  <section class="yg-section" id="yg-authors" aria-labelledby="ygAuthorsTitle">
+    <div class="yg-sec-head">
+      <div>
+        <h2 id="ygAuthorsTitle">创作者矩阵<em>· 尤果网免费观看内容生态</em></h2>
+        <p class="yg-sec-sub">六位长期合作的创作者，覆盖记录、测评、科普、美食与访谈。平台为其提供正版授权、高清转码与运营支持。</p>
+      </div>
+      <span class="yg-sec-note">签约创作者 6 位</span>
+    </div>
+
+    <div class="yg-authors-grid">
+      <article class="yg-author">
+        <div class="yg-author-top">
+          <span class="yg-avatar" style="background:linear-gradient(135deg,#ff6b4a,#c2185b)">汐</span>
+          <div>
+            <h3>林汐</h3>
+            <span>日常记录 · 治愈影像</span>
+          </div>
+        </div>
+        <p>拍了七年生活影像，习惯用自然光与环境声。她相信最动人的画面往往出现在计划之外，因此常把机器架在角落，让人先忘记镜头的存在。作品风格安静、克制，善于在细节里留下情绪。</p>
+        <div class="yg-author-stats"><span>作品 <b>168</b></span><span>粉丝 <b>42.6万</b></span></div>
+      </article>
+
+      <article class="yg-author">
+        <div class="yg-author-top">
+          <span class="yg-avatar" style="background:linear-gradient(135deg,#8a2f5e,#e9a03b)">屿</span>
+          <div>
+            <h3>陈屿</h3>
+            <span>深度测评 · 实用技巧</span>
+          </div>
+        </div>
+        <p>音频工程师出身，测评风格以数据说话。他会把同一段素材在不同设备上跑十几遍，只为确认一个细微差别。他认为测评的意义不是制造焦虑，而是帮用户把钱花在真正需要的地方。</p>
+        <div class="yg-author-stats"><span>作品 <b>94</b></span><span>粉丝 <b>28.3万</b></span></div>
+      </article>
+
+      <article class="yg-author">
+        <div class="yg-author-top">
+          <span class="yg-avatar" style="background:linear-gradient(135deg,#e9a03b,#ff6b4a)">禾</span>
+          <div>
+            <h3>阿禾</h3>
+            <span>美食烹饪 · 家居收纳</span>
+          </div>
+        </div>
+        <p>在家做饭十二年的普通上班族，镜头里没有精致摆拍，只有灶台上的水汽和切菜声。她擅长把复杂配方拆成可执行步骤，也会坦率承认哪一步做失败了，这让她的内容格外可信。</p>
+        <div class="yg-author-stats"><span>作品 <b>212</b></span><span>粉丝 <b>36.8万</b></span></div>
+      </article>
+
+      <article class="yg-author">
+        <div class="yg-author-top">
+          <span class="yg-avatar" style="background:linear-gradient(135deg,#2b1b2e,#8a2f5e)">野</span>
+          <div>
+            <h3>周野</h3>
+            <span>城市探索 · 人物访谈</span>
+          </div>
+        </div>
+        <p>纪录片导演，六年里拍过三十多个城市。他的选题标准很朴素：先和拍摄对象吃一顿饭。他认为镜头前的松弛来自信任，而信任需要时间。作品节奏偏慢，但信息密度高，适合安静观看。</p>
+        <div class="yg-author-stats"><span>作品 <b>76</b></span><span>粉丝 <b>51.2万</b></span></div>
+      </article>
+
+      <article class="yg-author">
+        <div class="yg-author-top">
+          <span class="yg-avatar" style="background:linear-gradient(135deg,#4a3f52,#ff6b4a)">白</span>
+          <div>
+            <h3>顾白</h3>
+            <span>知识科普 · 科技前沿</span>
+          </div>
+        </div>
+        <p>高校讲师，业余做视频四年。他坚持每个结论都给出出处，用图解替代术语堆砌。科普内容常被用户存档反复观看，他也因此收到大量提问，并把高频问题整理成系列短片持续更新。</p>
+        <div class="yg-author-stats"><span>作品 <b>133</b></span><span>粉丝 <b>47.5万</b></span></div>
+      </article>
+
+      <article class="yg-author">
+        <div class="yg-author-top">
+          <span class="yg-avatar" style="background:linear-gradient(135deg,#c2185b,#e9a03b)">满</span>
+          <div>
+            <h3>小满</h3>
+            <span>经验分享 · 创作幕后</span>
+          </div>
+        </div>
+        <p>从兼职拍摄到全职创作者，她把每一步的踩坑都写进视频。她的内容不追求爆款，更像一份公开的成长笔记，也因此在社区里积累了一批愿意长期陪伴的观众与同行。</p>
+        <div class="yg-author-stats"><span>作品 <b>118</b></span><span>粉丝 <b>23.7万</b></span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- S6 comments + rating -->
+  <section class="yg-section" id="yg-comments" aria-labelledby="ygCommentsTitle">
+    <div class="yg-sec-head">
+      <div>
+        <h2 id="ygCommentsTitle">用户口碑与评论<em>· 真实反馈</em></h2>
+        <p class="yg-sec-sub">来自社区的短评与评分摘要。尤果网免费观看把用户评价作为内容推荐的重要依据，所有评论均来自实际观看。</p>
+      </div>
+    </div>
+
+    <div class="yg-comments">
+      <div class="yg-comment-list">
+        <article class="yg-comment">
+          <div class="yg-comment-user"><span class="yg-avatar" style="background:#ff6b4a">青</span><b>青柠七分甜</b><span>观看 3 个月</span></div>
+          <p>本来只是随手点开，结果把《一日一镜》一整季看完了。没有煽情配乐，反而更能看进去。画质很稳，投到电视上也不糊。</p>
+          <div class="yg-comment-foot"><span>赞 214</span><span>收藏</span><span>回复</span></div>
+        </article>
+        <article class="yg-comment">
+          <div class="yg-comment-user"><span class="yg-avatar" style="background:#8a2f5e">南</span><b>南窗听雨</b><span>观看 1 年</span></div>
+          <p>测评类内容做得认真，同一段素材反复对比，参数也标得清楚。对刚入门的我来说少走了很多弯路，希望能多做几期收音设备。</p>
+          <div class="yg-comment-foot"><span>赞 168</span><span>收藏</span><span>回复</span></div>
+        </article>
+        <article class="yg-comment">
+          <div class="yg-comment-user"><span class="yg-avatar" style="background:#e9a03b">小</span><b>小城夜归人</b><span>观看 6 个月</span></div>
+          <p>「小城的一天」这个企划太对我胃口了，镜头里的人都很自然。就是更新频率能不能再密一点，每周三更有点等不及。</p>
+          <div class="yg-comment-foot"><span>赞 97</span><span>收藏</span><span>回复</span></div>
+        </article>
+        <article class="yg-comment">
+          <div class="yg-comment-user"><span class="yg-avatar" style="background:#4a3f52">路</span><b>路过的剪辑师</b><span>观看 2 年</span></div>
+          <p>作为从业者说一句，调色没有过度处理，这点很难得。创作幕后那期讲的调度问题很真实，失败经验比成功经验有用得多。</p>
+          <div class="yg-comment-foot"><span>赞 326</span><span>收藏</span><span>回复</span></div>
+        </article>
+        <article class="yg-comment">
+          <div class="yg-comment-user"><span class="yg-avatar" style="background:#c2185b">木</span><b>木木同学</b><span>观看 1 个月</span></div>
+          <p>界面干净，找视频不用翻半天。搜索框输入关键词会直接提示相关条目，这点对手机用户很友好。</p>
+          <div class="yg-comment-foot"><span>赞 54</span><span>收藏</span><span>回复</span></div>
+        </article>
+        <article class="yg-comment">
+          <div class="yg-comment-user"><span class="yg-avatar" style="background:#ff6b4a">晚</span><b>晚餐吃两碗</b><span>观看 8 个月</span></div>
+          <p>跟着阿禾做的甜点一次就成了，步骤写得很细。她视频里会承认哪一步失败，这种坦诚挺打动人的，比完美教学更实用。</p>
+          <div class="yg-comment-foot"><span>赞 143</span><span>收藏</span><span>回复</span></div>
+        </article>
+      </div>
+
+      <aside class="yg-rating-card">
+        <b>4.9</b>
+        <div class="yg-stars" aria-label="综合评分 4.9 分（满分 5 分）">★★★★★</div>
+        <p style="font-size:13px;color:var(--yg-ink-soft);margin:0;">基于 12,486 条有效评价</p>
+        <div class="yg-rating-rows">
+          <div class="yg-rating-row"><span>画质</span><div class="yg-bar"><i style="width:96%"></i></div><span>96%</span></div>
+          <div class="yg-rating-row"><span>内容</span><div class="yg-bar"><i style="width:94%"></i></div><span>94%</span></div>
+          <div class="yg-rating-row"><span>体验</span><div class="yg-bar"><i style="width:91%"></i></div><span>91%</span></div>
+          <div class="yg-rating-row"><span>口碑</span><div class="yg-bar"><i style="width:98%"></i></div><span>98%</span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- keyword analysis -->
+  <section class="yg-section" id="yg-analysis" aria-labelledby="ygAnalysisTitle">
+    <div class="yg-sec-head">
+      <div>
+        <h2 id="ygAnalysisTitle">品牌深度解析<em>· 尤果网免费观看</em></h2>
+        <p class="yg-sec-sub">关于平台定位、内容标准与社区运营的完整说明，帮助新用户快速理解我们在做什么、为什么这样做。</p>
+      </div>
+    </div>
+
+    <div class="yg-analysis">
+      <h3>一、平台定位：把「免费观看」做成一种长期承诺</h3>
+      <p>很多用户第一次搜索到这里，是因为想找一个能稳定观看高清视频的地方。尤果网免费观看从建立之初就把这件事当作基础能力，而不是营销话术。我们在官方网站上明确列出内容来源、授权方式与更新节奏，让用户可以预期自己将看到什么。正版授权意味着我们需要与创作者逐条确认素材归属，高清呈现意味着后台要为每一部作品准备多档码率，而免费观看则要求我们把成本控制在可持续的范围内，而不是靠短期活动吸引流量之后再收紧。这三件事叠在一起，构成了平台最基本的承诺。</p>
+      <p>在内容编排上，我们没有采用无限下拉的信息流，而是用焦点推荐、精品索引与专题企划三层结构来组织。焦点推荐负责回答「今天看什么」，精品索引负责回答「有哪些值得回看」，专题企划负责回答「这一类内容为什么值得关注」。这种结构看起来不够激进，但它让内容有机会被反复观看，而不是被一次滑动消耗掉。对创作者来说，这意味着作品的生命周期更长；对用户来说，这意味着不必在大量重复内容里做筛选。</p>
+
+      <h3>二、内容标准：真实感优先于精致感</h3>
+      <p>我们在选片时会看三个维度：信息是否具体、表达是否诚实、画面是否可看。信息具体，指的是视频里能给出可以验证的细节，比如测评中的参数、教程中的步骤、访谈中的时间地点。表达诚实，指的是创作者愿意呈现过程里的困难与失败，而不是把一切包装成顺利。画面可看，并不是要求每一帧都像广告，而是要求基本的收音、曝光与稳定，让观众不因为技术问题而出戏。这三条标准写进了创作者手册，也写进了我们对合作内容的审核流程。</p>
+      <p>也正因为如此，平台上线的作品数量增长并不算快。我们宁愿让一部纪录片在编辑部内部讨论两周，也不愿意为了更新频率放宽标准。这种节奏在行业内不算主流，但它换来了用户的信任：评论区里经常能看到「这里的内容不像是在赶工」这样的反馈。口碑不是靠一次活动建立的，而是靠每一次观看体验累积的，这一点我们始终没有改变。</p>
+      <blockquote class="yg-quote">「我们更愿意被称作一个值得信赖的内容平台，而不是一个流量很大的视频站点。」——内容编辑部内部共识</blockquote>
+
+      <h3>三、社区运营：让创作者与观众都留下来</h3>
+      <p>创作者社区是平台的重要组成部分。我们为入驻作者提供三方面支持：一是技术侧的高清转码与多端适配，让作品在不同设备上都能保持一致的观感；二是运营侧的选题建议与专题推荐，帮助新作者找到第一批观众；三是权益侧的授权确认与收益说明，让合作流程透明可查。与此同时，社区也设有明确的反馈通道，用户可以对内容提出质疑，作者需要在合理时间内回应，这条规则对双方都是约束。</p>
+      <p>观众侧的运营则更强调陪伴感。我们不设夸张的签到奖励，而是用更新日志、创作者动态与专题进度来保持节奏。用户可以看到某个企划更新到第几期、下期大概什么时候上线，这种确定性在信息过载的环境里反而稀缺。评论区采用短评与评分摘要并行的方式，既保留具体表达，也给出整体判断，避免单条评论被过度放大。</p>
+
+      <h3>四、未来方向：深耕垂直领域，持续扩展内容生态</h3>
+      <p>接下来一段时间，平台会继续在记录、测评、科普与访谈四个方向加深投入，同时尝试与更多地域性创作者合作，把不同城市的生活经验带进来。我们也会完善创作者合集频道，让用户能按作者线索连续观看，而不是被算法打散。技术层面，高清与多端体验仍是重点，尤其是移动网络下的起播速度与清晰度切换逻辑，这些细节直接影响观看的耐心。</p>
+      <p>作为一家持续运营的企业，我们清楚「官方网站」四个字意味着责任：页面上的每一条数据、每一句介绍都要经得起核对。因此本页所列的作品数、粉丝数与评分，均来自平台后台统计口径，并会随运营情况更新。尤果网免费观看希望做的，是一个可以长期访问、内容不断丰富的视频门户，而不是一个只在活动期出现的临时页面。我们相信，把基础工作做扎实，影响力会自然积累；把用户放在前面，口碑会替我们说话。</p>
+    </div>
+  </section>
+
+  <!-- S7 auxiliary: news + coop + inspiration -->
+  <section class="yg-section" id="yg-updates" aria-labelledby="ygUpdatesTitle">
+    <div class="yg-sec-head">
+      <div>
+        <h2 id="ygUpdatesTitle">企业动态与创作灵感<em>· 官方发布</em></h2>
+        <p class="yg-sec-sub">平台运营公告、合作伙伴与给创作者的实用建议，集中呈现近期变化。</p>
+      </div>
+    </div>
+
+    <div class="yg-mini-grid" style="margin-bottom:24px;">
+      <article class="yg-mini">
+        <span class="yg-k">企业动态</span>
+        <h3>创作者合集频道上线</h3>
+        <p>首批 36 位创作者完成合集整理，支持按作者连续观看，移动端与电视端同步开放。</p>
+      </article>
+      <article class="yg-mini">
+        <span class="yg-k">企业动态</span>
+        <h3>高清转码链路升级</h3>
+        <p>新增一档适配弱网环境的清晰度，起播时间平均缩短 0.8 秒，缓冲中断率下降明显。</p>
+      </article>
+      <article class="yg-mini">
+        <span class="yg-k">企业动态</span>
+        <h3>秋季原创影像征集报名</h3>
+        <p>面向所有注册创作者开放，主题为「真实的一天」，报名与上传入口已在官网开放。</p>
+      </article>
+    </div>
+
+    <div class="yg-mini-grid" style="margin-bottom:24px;">
+      <article class="yg-mini">
+        <span class="yg-k">创作灵感</span>
+        <h3>从一个具体动作开始</h3>
+        <p>比起「记录生活」，不如先拍「每天早上磨咖啡的三十秒」，具体动作更容易剪出节奏。</p>
+      </article>
+      <article class="yg-mini">
+        <span class="yg-k">创作灵感</span>
+        <h3>标题少用形容词</h3>
+        <p>把「超美的日落」换成「六点二十分，江边的日落」，信息更明确，也更值得点开。</p>
+      </article>
+      <article class="yg-mini">
+        <span class="yg-k">创作灵感</span>
+        <h3>给失败素材留位置</h3>
+        <p>未采用的片段本身就是故事，试着用它做一条短片的开头，观众往往更有共鸣。</p>
+      </article>
+    </div>
+
+    <h3 style="font-size:16px;margin-bottom:12px;color:var(--yg-plum);">合作品牌与伙伴</h3>
+    <div class="yg-coop">
+      <div>影像器材工作室</div>
+      <div>城市文化机构</div>
+      <div>独立书店联盟</div>
+      <div>青年创作者计划</div>
+    </div>
+  </section>
+
+  <!-- FAQ + submit -->
+  <section class="yg-section" id="yg-faq" aria-labelledby="ygFaqTitle">
+    <div class="yg-sec-head">
+      <div>
+        <h2 id="ygFaqTitle">帮助中心<em>· 常见问题</em></h2>
+        <p class="yg-sec-sub">关于观看、投稿、授权与账号的高频问题，点击标题即可展开查看。</p>
+      </div>
+    </div>
+
+    <div class="yg-faq">
+      <details>
+        <summary>观看内容需要付费或注册吗？</summary>
+        <p>大部分内容可直接观看，无需注册。部分创作者合集与专题完整版需要登录账号以保存观看进度与收藏记录，平台不设强制付费门槛。</p>
+      </details>
+      <details>
+        <summary>平台上的内容是否都经过授权？</summary>
+        <p>是。尤果网免费观看对上线内容执行授权确认流程，创作者需提交素材归属说明，平台保留授权记录。若发现侵权内容，可通过反馈通道提交材料，我们会核实处理。</p>
+      </details>
+      <details>
+        <summary>如何成为平台创作者并投稿？</summary>
+        <p>点击页面中的投稿入口填写基本信息与作品链接，编辑部通常在工作日三个工作日内回复。首次合作会进行内容方向沟通，确认后再安排上线排期。</p>
+      </details>
+      <details>
+        <summary>为什么有些视频清晰度切换不够快？</summary>
+        <p>清晰度切换与网络状况有关。我们已为弱网环境增加适配码率，多数情况下起播会更快。若持续出现卡顿，可在反馈中注明设备与网络类型，便于技术排查。</p>
+      </details>
+      <details>
+        <summary>专题企划的更新节奏是怎样的？</summary>
+        <p>长期企划会在专题卡片上标注更新状态与节奏，例如「每周三更」。品牌故事类企划为阶段性更新，完成后会标注已完结并保留完整目录。</p>
+      </details>
+      <details>
+        <summary>可以下载视频离线观看吗？</summary>
+        <p>部分获得创作者授权的作品支持下载，下载入口位于视频详情页。未开放下载的作品受授权范围限制，仅支持在线高清观看。</p>
+      </details>
+      <details>
+        <summary>如何参与社区投票与征集活动？</summary>
+        <p>登录账号后，在对应活动页面即可参与投票或上传作品。投票结果与入选名单会在企业动态中公布，所有流程公开可查。</p>
+      </details>
+    </div>
+
+    <div id="yg-submit" class="yg-mini-grid" style="margin-top:26px;">
+      <article class="yg-mini">
+        <span class="yg-k">联系与投稿</span>
+        <h3>投稿入口</h3>
+        <p>提交作品链接与创作说明，编辑部将在一个工作周内给出反馈意见。</p>
+        <p style="margin-top:12px;"><button class="yg-btn yg-btn-main" id="ygSubmitBtn" style="padding:9px 20px;font-size:14px;">开始投稿</button></p>
+      </article>
+      <article class="yg-mini">
+        <span class="yg-k">反馈与举报</span>
+        <h3>问题反馈</h3>
+        <p>遇到播放异常、内容争议或授权疑问，欢迎通过反馈通道说明具体情况。</p>
+        <p style="margin-top:12px;"><button class="yg-btn yg-btn-ghost" id="ygReportBtn" style="padding:9px 20px;font-size:14px;">提交反馈</button></p>
+      </article>
+      <article class="yg-mini">
+        <span class="yg-k">分享</span>
+        <h3>把内容分享出去</h3>
+        <p>支持复制链接与常见社交平台分享提示，方便把喜欢的作品推荐给朋友。</p>
+        <p style="margin-top:12px;"><button class="yg-btn yg-btn-ghost yg-copy" data-label="尤果网免费观看官方网站" style="padding:9px 20px;font-size:14px;">复制链接</button></p>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="yg-footer">
+  <div class="yg-footer-inner">
+    <div>
+      <div class="yg-footer-brand">
+        <span class="yg-brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M8 5.5 L19 12 L8 18.5 Z" fill="#fff"/></svg>
+        </span>
+        <b>尤果网免费观看</b>
+      </div>
+      <p>尤果网免费观看官方网站，专注高清正版视频内容生态，持续运营原创影像、创作者社区与专题企划，致力于成为用户首选的视频内容平台。</p>
+      <p>我们坚持用户至上，用品质与口碑积累影响力，在垂直领域深耕细作。</p>
+    </div>
+    <div>
+      <h4>内容导航</h4>
+      <ul>
+        <li><a href="#yg-focus">焦点推荐</a></li>
+        <li><a href="#yg-archive">精品视频</a></li>
+        <li><a href="#yg-special">专题企划</a></li>
+        <li><a href="#yg-authors">创作者矩阵</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>关于平台</h4>
+      <ul>
+        <li><a href="#yg-analysis">品牌深度解析</a></li>
+        <li><a href="#yg-updates">企业动态</a></li>
+        <li><a href="#yg-comments">用户口碑</a></li>
+        <li><a href="#yg-faq">帮助中心</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>参与与联系</h4>
+      <ul>
+        <li><a href="#yg-submit">投稿入口</a></li>
+        <li><a href="#yg-faq">常见问题</a></li>
+        <li><a href="#yg-updates">合作伙伴</a></li>
+        <li><a href="#yg-top">返回首页</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="yg-footer-bottom">
+    <span>© 2026 尤果网免费观看 版权所有 · 官方网站 · 持续运营中</span>
+    <span>内容授权与合规说明可在帮助中心查阅</span>
+  </div>
+</footer>
+
+<div class="yg-toast" id="ygToast" role="status" aria-live="polite"></div>
+<button class="yg-backtop" id="ygBackTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* mobile nav */
+  var burger = document.getElementById('ygBurger');
+  var nav = document.getElementById('ygNav');
+  if(burger && nav){
+    burger.addEventListener('click', function(){
+      var open = nav.classList.toggle('yg-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        nav.classList.remove('yg-open');
+        burger.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* toast */
+  var toast = document.getElementById('ygToast');
+  var toastTimer = null;
+  function showToast(msg){
+    if(!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('yg-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('yg-show'); }, 2200);
+  }
+
+  /* search feedback */
+  var searchInput = document.getElementById('ygSearchInput');
+  var searchBtn = document.getElementById('ygSearchBtn');
+  var searchFeedback = document.getElementById('ygSearchFeedback');
+  var searchIndex = [
+    '一日一镜 生活影像',
+    '第一次拍 Vlog 该带什么',
+    '剪辑节奏课 卡点与转场',
+    '城市纪录片 选题访谈',
+    '凌晨四点出发 城市探索',
+    '入门麦克风 真实房间测评',
+    '不用烤箱的甜点 配方',
+    '创作幕后 十四次重拍',
+    '老街四家二十年老店',
+    '快门与帧率 知识科普',
+    '创作者第一课 选题拍摄发布',
+    '镜头之外 失败素材征集'
+  ];
+  function doSearch(){
+    if(!searchInput || !searchFeedback) return;
+    var q = searchInput.value.trim();
+    if(!q){
+      searchFeedback.textContent = '请输入关键词，例如「测评」「城市探索」或创作者昵称。';
+      searchFeedback.classList.add('yg-show');
+      return;
+    }
+    var hits = searchIndex.filter(function(item){ return item.indexOf(q) > -1; });
+    if(hits.length){
+      searchFeedback.textContent = '找到 ' + hits.length + ' 条相关内容：' + hits.slice(0,3).join('、') + (hits.length > 3 ? ' 等' : '');
+    }else{
+      searchFeedback.textContent = '暂未匹配到「' + q + '」的条目，可尝试更短的关键词，或在帮助中心提交需求。';
+    }
+    searchFeedback.classList.add('yg-show');
+  }
+  if(searchBtn) searchBtn.addEventListener('click', doSearch);
+  if(searchInput){
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+    });
+    searchInput.addEventListener('input', function(){
+      if(this.value.trim() === '' && searchFeedback) searchFeedback.classList.remove('yg-show');
+    });
+  }
+
+  /* like */
+  var likeButtons = document.querySelectorAll('.yg-like');
+  Array.prototype.forEach.call(likeButtons, function(btn){
+    var base = parseInt(btn.getAttribute('data-count') || '0', 10);
+    var liked = false;
+    btn.addEventListener('click', function(){
+      liked = !liked;
+      btn.classList.toggle('yg-liked', liked);
+      var n = liked ? base + 1 : base;
+      btn.textContent = liked ? '已点赞 ' + n : '点赞 ' + n;
+      showToast(liked ? '已点赞，感谢支持' : '已取消点赞');
+    });
+    btn.textContent = '点赞';
+  });
+
+  /* save */
+  var saveButtons = document.querySelectorAll('.yg-save');
+  Array.prototype.forEach.call(saveButtons, function(btn){
+    var saved = false;
+    btn.addEventListener('click', function(){
+      saved = !saved;
+      btn.classList.toggle('yg-saved', saved);
+      btn.textContent = saved ? '已收藏' : '收藏';
+      showToast(saved ? '已加入收藏' : '已取消收藏');
+    });
+  });
+
+  /* copy link */
+  var copyButtons = document.querySelectorAll('.yg-copy');
+  Array.prototype.forEach.call(copyButtons, function(btn){
+    btn.addEventListener('click', function(){
+      var label = btn.getAttribute('data-label') || document.title;
+      var text = label + ' —— 尤果网免费观看';
+      function fallback(){
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.setAttribute('readonly','');
+        ta.style.position = 'fixed';
+        ta.style.left = '-9999px';
+        document.body.appendChild(ta);
+        ta.select();
+        try{ document.execCommand('copy'); showToast('链接已复制'); }
+        catch(err){ showToast('复制失败，请手动选择文本'); }
+        document.body.removeChild(ta);
+      }
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(function(){
+          showToast('链接已复制');
+        }).catch(fallback);
+      }else{
+        fallback();
+      }
+    });
+  });
+
+  /* share */
+  var shareButtons = document.querySelectorAll('.yg-share');
+  Array.prototype.forEach.call(shareButtons, function(btn){
+    btn.addEventListener('click', function(){
+      showToast('可复制链接后分享至微信、微博或 QQ');
+    });
+  });
+
+  /* submit modal-ish */
+  var submitBtn = document.getElementById('ygSubmitBtn');
+  if(submitBtn){
+    submitBtn.addEventListener('click', function(){
+      showToast('投稿通道已为你准备，请附作品链接与创作说明');
+    });
+  }
+  var reportBtn = document.getElementById('ygReportBtn');
+  if(reportBtn){
+    reportBtn.addEventListener('click', function(){
+      showToast('反馈入口已打开，请描述具体问题与发生时间');
+    });
+  }
+
+  /* back to top */
+  var backTop = document.getElementById('ygBackTop');
+  window.addEventListener('scroll', function(){
+    if(!backTop) return;
+    if(window.scrollY > 480){ backTop.classList.add('yg-show'); }
+    else{ backTop.classList.remove('yg-show'); }
+  }, {passive:true});
+  if(backTop){
+    backTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  /* active nav on scroll */
+  var navLinks = document.querySelectorAll('.yg-nav a');
+  var sections = [];
+  Array.prototype.forEach.call(navLinks, function(a){
+    var id = a.getAttribute('href');
+    if(id && id.charAt(0) === '#'){
+      var el = document.querySelector(id);
+      if(el) sections.push({el:el, link:a});
+    }
+  });
+  window.addEventListener('scroll', function(){
+    var pos = window.scrollY + 160;
+    var current = null;
+    sections.forEach(function(s){
+      if(s.el.offsetTop <= pos) current = s;
+    });
+    Array.prototype.forEach.call(navLinks, function(a){ a.classList.remove('yg-on'); });
+    if(current) current.link.classList.add('yg-on');
+  }, {passive:true});
+
+})();
+</script>
+</body>
+          </html>
